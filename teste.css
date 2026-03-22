@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site do Dionatan</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset básico para remover margens padrão do navegador */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      text-align: center;
+      color: white;
+      font-family: 'Orbitron', sans-serif;
+      
+      /* Flexbox para centralizar tudo vertical e horizontalmente */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+
+      background: linear-gradient(-45deg, #0f172a, #1e3a8a, #9333ea, #06b6d4);
+      background-size: 400% 400%;
+      animation: fundoAnimado 10s ease infinite;
+    }
+
+    @keyframes fundoAnimado {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      text-shadow: 0 0 10px #3b82f6, 0 0 20px #9333ea, 0 0 40px #06b6d4;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 25px;
+      font-size: 1.2rem;
+    }
+
+    .botao {
+      background-color: #3b82f6;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .botao:hover {
+      background-color: #1d4ed8;
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #3b82f6;
+    }
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 12px;
+      margin-top: 30px;
+      /* Aura sutil em volta da imagem também */
+      box-shadow: 0 0 20px rgba(6, 182, 212, 0.5); 
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Professor Dionatan</h1>
+
+  <p>Aura absurda detectada.</p>
+
+  <button class="botao">Clique aqui</button>
+
+  <img src="imagem.png" alt="Professor Dionatan com aura">
+
+</body>
+</html>
